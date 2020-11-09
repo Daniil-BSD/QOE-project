@@ -357,31 +357,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    pattern1_name: 
-    pattern1: {fileID: 0}
-    pattern2_name: 
-    pattern2: {fileID: 0}
-    pallete1_name: 
-    pallete1:
+    palletes:
+    - bouncer: {r: 1, g: 0.96862745, b: 0, a: 0}
+      dampner: {r: 0, g: 0.48235294, b: 1, a: 0}
+      goal: {r: 0, g: 0.8901961, b: 0, a: 0}
+      killer: {r: 0.9019608, g: 0, b: 0, a: 0}
       wall: {r: 0, g: 0, b: 0, a: 0}
-      goal: {r: 0, g: 0, b: 0, a: 0}
+    - bouncer: {r: 0.7764706, g: 0.75686276, b: 0.22352941, a: 0}
+      dampner: {r: 0.22352941, g: 0.49019608, b: 0.7764706, a: 0}
+      goal: {r: 0.20392157, g: 0.69803923, b: 0.20392157, a: 0}
       killer: {r: 0, g: 0, b: 0, a: 0}
-      bouncer: {r: 0, g: 0, b: 0, a: 0}
-      dampner: {r: 0, g: 0, b: 0, a: 0}
-    pallete2_name: 
-    pallete2:
       wall: {r: 0, g: 0, b: 0, a: 0}
-      goal: {r: 0, g: 0, b: 0, a: 0}
-      killer: {r: 0, g: 0, b: 0, a: 0}
-      bouncer: {r: 0, g: 0, b: 0, a: 0}
-      dampner: {r: 0, g: 0, b: 0, a: 0}
-    pallete3_name: 
-    pallete3:
-      wall: {r: 0, g: 0, b: 0, a: 0}
-      goal: {r: 0, g: 0, b: 0, a: 0}
-      killer: {r: 0, g: 0, b: 0, a: 0}
-      bouncer: {r: 0, g: 0, b: 0, a: 0}
-      dampner: {r: 0, g: 0, b: 0, a: 0}
+    - bouncer: {r: 0.9764706, g: 1, b: 0.2784314, a: 0}
+      dampner: {r: 0.2784314, g: 0.5803922, b: 1, a: 0}
+      goal: {r: 0.20784314, g: 1, b: 0.2627451, a: 0}
+      killer: {r: 1, g: 0.2627451, b: 0.20784314, a: 0}
+      wall: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 0}
+    patternPriviews:
+    - {fileID: 21300000, guid: b297475667542eb4695a4cd1ce8a4576, type: 3}
+    - {fileID: 21300000, guid: ab6d4a107c741b1488e273008e3e7185, type: 3}
 --- !u!1 &550397270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +1855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1881707542
 MonoBehaviour:
   m_ObjectHideFlags: 0
