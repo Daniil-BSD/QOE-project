@@ -358,24 +358,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     palletes:
-    - bouncer: {r: 0, g: 0, b: 0, a: 0}
-      dampner: {r: 0, g: 0, b: 0, a: 0}
-      goal: {r: 0, g: 0, b: 0, a: 0}
+    - bouncer: {r: 1, g: 0.96862745, b: 0, a: 0}
+      dampner: {r: 0, g: 0.48235294, b: 1, a: 0}
+      goal: {r: 0, g: 0.8901961, b: 0, a: 0}
+      killer: {r: 0.9019608, g: 0, b: 0, a: 0}
+      wall: {r: 0, g: 0, b: 0, a: 0}
+    - bouncer: {r: 0.7764706, g: 0.75686276, b: 0.22352941, a: 0}
+      dampner: {r: 0.22352941, g: 0.49019608, b: 0.7764706, a: 0}
+      goal: {r: 0.20392157, g: 0.69803923, b: 0.20392157, a: 0}
       killer: {r: 0, g: 0, b: 0, a: 0}
       wall: {r: 0, g: 0, b: 0, a: 0}
-    - bouncer: {r: 0, g: 0, b: 0, a: 0}
-      dampner: {r: 0, g: 0, b: 0, a: 0}
-      goal: {r: 0, g: 0, b: 0, a: 0}
-      killer: {r: 0, g: 0, b: 0, a: 0}
-      wall: {r: 0, g: 0, b: 0, a: 0}
-    - bouncer: {r: 0, g: 0, b: 0, a: 0}
-      dampner: {r: 0, g: 0, b: 0, a: 0}
-      goal: {r: 0, g: 0, b: 0, a: 0}
-      killer: {r: 0, g: 0, b: 0, a: 0}
-      wall: {r: 0, g: 0, b: 0, a: 0}
+    - bouncer: {r: 0.9764706, g: 1, b: 0.2784314, a: 0}
+      dampner: {r: 0.2784314, g: 0.5803922, b: 1, a: 0}
+      goal: {r: 0.20784314, g: 1, b: 0.2627451, a: 0}
+      killer: {r: 1, g: 0.2627451, b: 0.20784314, a: 0}
+      wall: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 0}
     patternPriviews:
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: b297475667542eb4695a4cd1ce8a4576, type: 3}
+    - {fileID: 21300000, guid: ab6d4a107c741b1488e273008e3e7185, type: 3}
 --- !u!1 &550397270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,7 +1855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1881707542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1948,7 +1948,7 @@ GameObject:
   - component: {fileID: 2007036211}
   - component: {fileID: 2007036210}
   m_Layer: 5
-  m_Name: Prompt
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1970,7 +1970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -226}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 0, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2007036210
@@ -2006,7 +2006,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Selcet which of the previus two level environments you prefered '
+  m_Text: The prompt goes here
 --- !u!222 &2007036211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2092,9 +2092,8 @@ GameObject:
   - component: {fileID: 2017633455}
   - component: {fileID: 2017633457}
   - component: {fileID: 2017633456}
-  - component: {fileID: 2017633458}
   m_Layer: 5
-  m_Name: Acessment Pannel
+  m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2160,19 +2159,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017633454}
   m_CullTransparentMesh: 0
---- !u!114 &2017633458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017633454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842553761a909124f97faf251ea559fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  phase: 1
 --- !u!1 &2098432480
 GameObject:
   m_ObjectHideFlags: 0
