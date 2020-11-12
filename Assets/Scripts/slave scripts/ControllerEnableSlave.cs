@@ -7,9 +7,7 @@ using static Assets.Scripts.StateContainer;
 public class ControllerEnableSlave : MonoBehaviour {
 
 	public Phase phase;
-
-	// Start is called before the first frame update
-	void Update()
+	void Start()
 	{
 		gameObject.SetActive(StateContainer.State.CurrentPhase == phase);
 	}

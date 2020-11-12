@@ -111,10 +111,12 @@ namespace Assets.Scripts {
 		{
 			if ( State.phase == Phase.Stimulus1 ) {
 				State.phase = Phase.Stimulus2;
+				Reload();
 				return true;
 			}
 			if ( State.phase == Phase.Stimulus2 ) {
 				State.phase = Phase.Accessment;
+				Reload();
 				return true;
 			}
 			return false;
@@ -136,6 +138,7 @@ namespace Assets.Scripts {
 				State.phase = Phase.Stimulus1;
 				if ( ++State.pairIndex >= state.fixedOrderPairs.Count )
 					State.phase = Phase.Report;
+				Reload();
 				return true;
 			}
 			return false;
@@ -147,6 +150,7 @@ namespace Assets.Scripts {
 			if ( State.resolutionTestPassed is null && State.phase == Phase.ResolutionTest ) {
 				State.resolutionTestPassed = passed;
 				State.phase = Phase.Stimulus1;
+				Reload();
 				return true;
 			}
 			return false;

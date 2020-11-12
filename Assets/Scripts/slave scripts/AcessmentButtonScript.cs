@@ -1,23 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts;
 using UnityEngine;
 
 public class AcessmentButtonScript : MonoBehaviour {
 
-
 	public void RecordScore(int score)
 	{
-
-	}
-	// Start is called before the first frame update
-	void Start()
-	{
-
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-
+		StateContainer.RecordAccessment(score);
 	}
 }

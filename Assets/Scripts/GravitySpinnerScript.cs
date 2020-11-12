@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Camera))]
 public class GravitySpinnerScript : MonoBehaviour {
@@ -11,6 +12,9 @@ public class GravitySpinnerScript : MonoBehaviour {
 	private float usedMagnitude;
 	private float step;
 	private float angle = -90;
+
+	public Button LeftButton;
+	public Button RightButton;
 
 	public float Angle => angle;
 
