@@ -100,7 +100,7 @@ namespace Assets.Scripts {
 				for ( int pattern2 = pattern1 + 1 ; pattern2 < data.patternPriviews.Count ; pattern2++ )
 					fixedOrderPairs.Add(new Pair(new Stimulus(color, pattern1), new Stimulus(color, pattern2)));
 			System.Random random = new System.Random();
-			presentationOrderPairs = fixedOrderPairs.OrderBy(n => random.Next()).ToList();
+			presentationOrderPairs = fixedOrderPairs.OrderBy(n => ( int.MaxValue / 2 ) - random.Next()).ToList();
 			phase = Phase.ResolutionTest;
 			pairIndex = 0;
 			Reload();
@@ -164,7 +164,7 @@ namespace Assets.Scripts {
 		// =================================  4  =================================
 		public override string ToString()
 		{
-			string ret = "";
+			string ret = resolutionTestPassed + " ";
 			foreach ( Pair pair in fixedOrderPairs ) {
 				if ( pair.IsRated )
 					ret += pair.Rating + " ";
